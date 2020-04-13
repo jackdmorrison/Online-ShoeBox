@@ -1,7 +1,7 @@
 /*this function takes in a url for the api you want to use and takes in an image, the one you want display when a person is in*/
 
-function getData(url,empty){
-  var image= document.getElementById("IMG");
+function getData(url,empty,imgID){
+  var image= document.getElementById(imgID);
   var theDiv= document.getElementById("Image-Here")
 
   fetch(url)
