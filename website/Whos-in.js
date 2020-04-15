@@ -2,7 +2,7 @@
 
 function getData(url,empty,imgID){
   var image= document.getElementById(imgID);
-  var theDiv= document.getElementById("Image-Here")
+  //var theDiv= document.getElementById("Image-Here")
 
   fetch(url)
       .then((resp) => resp.json())
@@ -25,5 +25,5 @@ function getData(url,empty,imgID){
       .catch(function(error) {
         console.log(error);
       });
-  theDiv.appendChild(image);
+  //theDiv.appendChild(image);
 }
